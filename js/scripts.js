@@ -119,8 +119,8 @@ function start(){
             podeAtirar = false;
             topo = parseInt($("#jogador").css("top"));
             posicaoX = parseInt($("#jogador").css("left"));
-            tiroX = posicaoX + 190;
-            topoTiro = topo + 37;
+            tiroX = posicaoX + 100;
+            topoTiro = topo + 15;
             $("#fundoGame").append("<div id='disparo'></div>");
             $("#disparo").css("top",topoTiro);
             $("#disparo").css("left",tiroX);
