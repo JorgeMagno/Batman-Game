@@ -8,7 +8,7 @@ h1{
 h2{
     font-family: 'Fredoka', sans-serif;
     font-size: 20px;
-    color: #FFF;
+    color: rgb(236, 240, 6);
 }
 h3{
     font-family: 'Fredoka', sans-serif;
@@ -119,7 +119,7 @@ body{
     width: 450px;
     height: 50px;
     left: 5px;
-    top: 540px;
+    top: 500px;
 }
 #energia{
     width: 140px;
