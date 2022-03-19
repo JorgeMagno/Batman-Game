@@ -100,7 +100,7 @@ function start(){
     }
     function moveinimigo2(){
         posicaoX = parseInt($("#inimigo2").css("left"));
-        $("#inimigo2").css("left",posicaoX-velocidade);
+        $("#inimigo2").css("left",posicaoX-velocidade2);
         
         if(posicaoX<=0){
             $("#inimigo2").css("left",775);
