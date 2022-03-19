@@ -24,12 +24,11 @@ function start(){
     var somPerdido = document.getElementById("somPerdido");
     var somGameOver = document.getElementById("somGameover");
     var tecla = {
-        W: 87,
-        S: 83,
         D: 68,
+        left: 37,
         up: 38,
-        down:40,
-        Enter: 13
+        right:39,
+        down:40
     };
     jogo.pressionou = [];
     $(document).keydown(function(e){
@@ -54,21 +53,35 @@ function start(){
         $("#fundoGame").css("background-position",esquerda-1);
     }
     function movejogador(){
-        if(jogo.pressionou[tecla.W] || jogo.pressionou[tecla.up]){
+        if(jogo.pressionou[tecla.up]){
             var topo = parseInt($("#jogador").css("top"));
             $("#jogador").css("top",topo-10);
             if(topo<=10){
                 $("#jogador").css("top",topo+10);
             }
         }
-        if(jogo.pressionou[tecla.S] || jogo.pressionou[tecla.down]){
+        if(jogo.pressionou[tecla.down]){
             var topo = parseInt($("#jogador").css("top"));
             $("#jogador").css("top",topo+10);
             if(topo>=434){
                 $("#jogador").css("top",topo-10);
             }
         }
-        if(jogo.pressionou[tecla.D] || jogo.pressionou[tecla.Enter]){
+        if(jogo.pressionou[tecla.right]){
+            var left = parseInt($("#jogador").css("left"));
+            $("#jogador").css("left",left+10);
+            if(left>=800){
+                $("#jogador").css("left",left-10);
+            }
+        }
+        if(jogo.pressionou[tecla.left]){
+            var left = parseInt($("#jogador").css("left"));
+            $("#jogador").css("left",left-10);
+            if(left<=10){
+                $("#jogador").css("left",left+10);
+            }
+        }
+        if(jogo.pressionou[tecla.D]){
             disparo();
             
         }
