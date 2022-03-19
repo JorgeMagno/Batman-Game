@@ -15,9 +15,9 @@
 O Batman em sua nave tem que salvar o maior número de pessoas que conseguir antes que elas sejam atropeladas por um caminhão da Liga dos Assasinos. Ele também tem que desviar ou destruir os helicópteros da organização inimiga. O personagem pode destruir estes utilizando uma tiro é disparado ao pressionar "D" no teclado. O jogo finaliza quando a nave do Batman é atingida 3 vezes.
 
 ## Pontuação
-+ 100 pontos por salvar uma pessoa.
-+ 50 pontos por destruir um inimigo.
-- 150 pontos por deixar uma pessoa ser morta.
+- Mais 100 pontos por salvar uma pessoa.
+- Mais 50 pontos por destruir um inimigo.
+- Menos 150 pontos por deixar uma pessoa ser morta.
 
 
 ## Imagens do jogo
