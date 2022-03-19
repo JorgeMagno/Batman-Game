@@ -169,7 +169,7 @@ function start(){
         }
         if(colisao3.length>0){
             velocidade+=0.3;
-            pontos+=2;
+            pontos+=50;
             inimigo1X = parseInt($("#inimigo1").css("left"));
             inimigo1Y = parseInt($("#inimigo1").css("top"));
             
@@ -182,7 +182,7 @@ function start(){
         }
         if(colisao4.length>0){
             velocidade2+=0.1;
-            pontos+=1;
+            pontos+=50;
             inimigo2X = parseInt($("#inimigo2").css("left"));
             inimigo2Y = parseInt($("#inimigo2").css("top"));
             $("#inimigo2").remove();
@@ -192,7 +192,7 @@ function start(){
             reposicionaInimigo2();
         }
         if(colisao5.length>0){
-            pontos+=1;
+            pontos+=100;
             salvos++;
             somResgate.play();
             $("#amigo").remove();
@@ -200,7 +200,7 @@ function start(){
             
         }
         if(colisao6.length>0){
-            pontos-=1;
+            pontos-=150;
             perdidos++;
             somPerdido.play();
             amigoX = parseInt($("#amigo").css("left"));
